@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="db" class="spring.day0625.ex4.Mysql">
+	<!-- 2개의 생성자 주입 -->
+	<constructor-arg>
+	<value>com.mysql.jdbc.Driver</value>
+	</constructor-arg>
+	<constructor-arg>
+	<value>jdbc:mysql://localhost:3306/root</value>
+	</constructor-arg>
+	<!-- 2개의 세터주입 -->
+	<property name="user" value="root"/>
+	<property name="password" value="1234"/>
+	</bean>
+</beans>

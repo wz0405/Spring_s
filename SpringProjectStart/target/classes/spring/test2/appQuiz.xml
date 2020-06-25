@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean name="info" class="spring.day0625.quiz.Info">
+		<!-- 생성자 주입 -->
+		<constructor-arg value="한현희" />
+		<constructor-arg value="25" />
+	</bean>
+	<bean name="score" class="spring.day0625.quiz.Score">
+		<constructor-arg value="99" />
+		<constructor-arg value="98" />
+		<constructor-arg value="99" />
+	</bean>
+	<bean name="score1" class="spring.day0625.quiz.MyData">
+	<constructor-arg ref="score" />
+	</bean>
+	<bean name="info1" class="spring.day0625.quiz.MyData">
+	<constructor-arg ref="info" />
+	</bean>
+</beans>
