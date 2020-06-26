@@ -15,6 +15,7 @@
 	</bean>
 	<bean name="score1" class="spring.day0625.quiz.MyData">
 	<constructor-arg ref="score" />
+	
 	</bean>
 	<bean name="info1" class="spring.day0625.quiz.MyData">
 	<constructor-arg ref="info" />

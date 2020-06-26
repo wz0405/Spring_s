@@ -12,6 +12,6 @@
 	<!-- 어노테이션 등록 -->
 	<context:annotation-config/>
 	<!-- 스캔할 패키지 지정, 와일드 카드로 지정 -->
-	<context:component-scan base-package="spring.day0625.anno"></context:component-scan>
-	
+	<context:component-scan base-package="spring.day0625.anno"/>
+	<context:component-scan base-package="spring.day0625.anno2"/>
 </beans>
