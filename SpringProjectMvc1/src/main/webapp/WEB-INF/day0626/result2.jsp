@@ -12,10 +12,10 @@
 
 </head>
 <body>
-<h1>result.jsp 파일입니다.<h1>
-<h1>HelloController로 부터 포워드</h1>
-<b>이름: ${name }</b><br>
-<b>이름: ${requestScope.name }</b><br>
-<b>주소: ${requestScope.addr }</b><br>
+<h1>result2로 부터 받은 파일 입니다.</h1>
+<h2>HelloController로 부터 포워드</h2>
+<b>상품명: ${sangpum }</b><br>
+<b>가격:<fmt:formatNumber value="${price }" pattern="#,##0"></fmt:formatNumber></b><br>
+
 </body>
 </html>

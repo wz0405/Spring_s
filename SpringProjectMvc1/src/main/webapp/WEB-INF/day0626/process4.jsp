@@ -12,10 +12,8 @@
 
 </head>
 <body>
-<h1>result.jsp 파일입니다.<h1>
-<h1>HelloController로 부터 포워드</h1>
-<b>이름: ${name }</b><br>
-<b>이름: ${requestScope.name }</b><br>
-<b>주소: ${requestScope.addr }</b><br>
+<h1>현재 url 매핑주소 입력</h1>
+<c:set var="data" value="request.getRequestURL()"/>
+<h2 style="color:red;">${data }</h2>
 </body>
 </html>

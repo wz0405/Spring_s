@@ -12,10 +12,17 @@
 
 </head>
 <body>
-<h1>result.jsp 파일입니다.<h1>
-<h1>HelloController로 부터 포워드</h1>
-<b>이름: ${name }</b><br>
-<b>이름: ${requestScope.name }</b><br>
-<b>주소: ${requestScope.addr }</b><br>
+<h2>
+		이름: ${dto.name }
+		<br>
+		자바: ${dto.java }
+		<br>
+		jsp: ${dto.jsp }
+		<br>
+		spring: ${dto.spring }
+		<br>
+	</h2>
+	
+
 </body>
 </html>
