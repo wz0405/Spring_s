@@ -13,9 +13,15 @@
 <body>
 	<h2>사원입력 폼</h2>
 	<form action="action" method="post">
-		이름:<input type="text" name="name"><br> 급여:<input type="text" name="pay"><br> 나이:<input
-			type="text" name="age"
-		><br> 혈액형:<input type="text" name="blood"> <input type="submit">
+		이름:
+		<input type="text" name="name">
+		<br> 급여:
+		<input type="text" name="pay">
+		<br> 나이:
+		<input type="text" name="age">
+		<br> 혈액형:
+		<input type="text" name="blood">
+		<input type="submit">
 
 	</form>
 </body>
