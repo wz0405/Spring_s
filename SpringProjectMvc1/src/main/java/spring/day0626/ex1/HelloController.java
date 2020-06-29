@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller //컴포넌트 역할 수행
 public class HelloController {
 	
-	@RequestMapping(value="/happy",method = RequestMethod.GET) //root로 매핑주소 설정
+	@RequestMapping(value="/happy",method = RequestMethod.GET) //happy로 매핑주소 설정
 	public String hello(Model model) {  //모델은 request만 담당
 		//서블릿에서 코딩했던 request.setAttribute와 같다.
 		//Model은 request에서 데이타를 저장하기 위한 인터페이스

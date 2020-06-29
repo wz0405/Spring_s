@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller("sawon")
 public class SawonController {
+	//@PostMapping(value="/",method=RequestMethod.POST) //시작화면이 루트
 	@GetMapping("sawon")
 	public String sawonForm() {
 		return "sawonForm";

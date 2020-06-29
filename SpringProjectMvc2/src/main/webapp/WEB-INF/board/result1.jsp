@@ -7,13 +7,23 @@
 <meta charset="utf-8">
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 </head>
 <body>
-	<h1>${title }</h1>
-	<img alt="" src="${myimg1 }">
-	<a href="board/result1.do">board/result1.do로 이동</a>
-	<a href="shop/list.do">shop/list.do로 이동</a>
+	<h1>이미지 출력</h1>
+	<img alt="" src="../image/yeonhee.png">
+	<hr>
+	<table style="width: 200px;">
+		<tr>
+			<th>이름</th>
+			<th>핸드폰</th>
+		</tr>
+		<tr>
+		<td>강호동</td>
+		<td>010-0121-1231</td>
+		</tr>
+	</table>
 </body>
 </html>
