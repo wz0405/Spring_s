@@ -14,6 +14,7 @@
 <body>
  <h1><c:redirect url="list"/></h1>
 <!-- <a href="list">스프링 게시판 연습</a> -->
+ <h1><c:redirect url="write"/></h1>
 </body>
 
 
