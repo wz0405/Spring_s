@@ -30,7 +30,7 @@
 			<c:forEach var="dto" items="${list }" varStatus="i">
 				<tr>
 					<td align="center">${i.count}</td>
-					<td><a href="content?num=${dto.num }">${dto.subject}</a></td>
+					<td><a href="content?num=${dto.num }">${dto.subject}</a></td> <!-- 컨트롤러의 매핑주소 포함 -->
 					<td>${dto.writer }</td>
 					<td><fmt:formatDate value="${dto.writeday }" pattern="yyyy-MM-dd" /></td>
 				</tr>
