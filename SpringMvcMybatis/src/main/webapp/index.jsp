@@ -12,9 +12,11 @@
 
 </head>
 <body>
- <h1><c:redirect url="list"/></h1>
-<!-- <a href="list">스프링 게시판 연습</a> -->
- <h1><c:redirect url="write"/></h1>
+<h1><%--  <h1><c:redirect url="list"/></h1> --%>
+<a href="list">스프링 게시판 연습_Board</a><br>
+<a href="person/list">스프링 게시판 연습2_Person</a></h1>
+<!-- person/list == 매핑주소 -->
+
 </body>
 
 
