@@ -20,4 +20,22 @@ public class PersonDao extends SqlSessionDaoSupport implements PersonDaoInter{
 		getSqlSession().insert("insertOfPerson", dto);
 	}
 
+	@Override
+	public PersonDto getData(String num) {
+		// TODO Auto-generated method stub
+		return getSqlSession().selectOne("selectOneOfPerson", num);
+	}
+
+	@Override
+	public void updatePerson(PersonDto dto) {
+		// TODO Auto-generated method stub
+		getSqlSession().update("updateOfPerson", dto);
+	}
+
+	@Override
+	public void deletePerson(PersonDto dto) {
+		// TODO Auto-generated method stub
+		getSqlSession().delete("deleteOfPerson", dto);
+	}
+
 }

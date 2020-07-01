@@ -32,7 +32,7 @@
 					<td align="center">${dto.age}</td>
 					<td align="center">${dto.addr}</td>
 					<td align="center"><fmt:formatDate value="${dto.sdate }" pattern="yyyy-MM-dd HH:mm" /></td>
-					<td align="center"><a href="location.href=''">수정</a><a href="location.href=''">삭제</a></td>
+					<td align="center"><a href='updateform?num=${dto.num}'>수정</a><a href='delete?num=${dto.num}'>삭제</a></td>
 
 				</tr>
 			</c:forEach>
