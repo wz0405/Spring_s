@@ -11,7 +11,7 @@ public class SpringFileWriter {
 	public void writeFile(MultipartFile file,String path,String fileName) {
 		try {
 			byte fileData[]=file.getBytes(); //파일을 바이트로 밖에 못읽어 온다.
-			fos=new FileOutputStream(path+"\\"+fileName);//경로사이에는 \\필수
+			fos=new FileOutputStream(path+"//"+fileName);//경로사이에는 //필수
 			fos.write(fileData);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
