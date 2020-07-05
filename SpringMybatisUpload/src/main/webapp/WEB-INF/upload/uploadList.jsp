@@ -19,7 +19,7 @@
 		<table class="table table-bordered" style="width: 400px;">
 			<tr>
 				<td>작성자: ${dto.writer}<br> 작성일:<fmt:formatDate value="${dto.writeday }" pattern="yyyy-MM-dd HH:mm" />
-					<hr> ${dto.photoname } <img alt="" src="../save/${dto.photoname }" style="max-width: 500px;"> <pre>${dto.content }</pre>
+					<hr> ${dto.photoname } <img alt="" src="../save/${dto.photoname }}" style="max-width:400px;"> <pre>${dto.content }</pre>
 				</td>
 			</tr>
 			<tr align="right">
@@ -28,6 +28,7 @@
 					<button type="button" class="btn btn-info" onclick="location.href='update?num=${dto.num}'">update</button>
 				</td>
 			</tr>
+		
 		</table>
 		<br><br>
 	</c:forEach>
