@@ -26,6 +26,7 @@
 				<td colspan="2"><textarea style="width: 400px; height: 150px;" class="form-control" name="content"></textarea></td>
 			</tr>
 			<tr>
+			
 				<td colspan="2" align="center">
 					<button type="submit" class="btn btn-sm btn-danger">db저장</button>
 				</td>

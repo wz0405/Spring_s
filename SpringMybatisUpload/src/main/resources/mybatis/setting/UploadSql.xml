@@ -7,9 +7,23 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select count(*) from imageguest
 	</select>
 	<select id="selectAllOfUpload" resultType="udto">
-		select * from imageguest order by num asc
+		select * from imageguest order by num desc
 	</select>
 	<insert id="insertOfUpload" parameterType="udto">
 		insert into imageguest values(seq_b.nextval,#{writer},#{photoname},#{content},sysdate)
 	</insert>
+	
+	<select id="updateOfUpload" parameterType="String"
+		resultType="udto">
+		update imageguest set writer=#{writer},photoname=#{photoname},content=#{content} where num=#{num}
+
+	</select>
+	<insert id="deleteOfUpload" parameterType="udto">
+		delete from imageguest where
+		num=#{num}
+	</insert>
+	<select id="selectOneOfUpload" parameterType="String"
+		resultType="udto">
+		select * from imageguest where num=#{num}
+	</select>
 </mapper>
