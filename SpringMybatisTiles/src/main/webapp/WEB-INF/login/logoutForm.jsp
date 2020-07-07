@@ -14,17 +14,11 @@
 
 </head>
 <body>
-<a href="${path }/home">Home</a>
-<a href="${path }/info/insertform">입력폼</a>
-<a href="${path }/info/list">My목록</a>
-<a href="${path }/member/insertform">회원가입</a>
-<a href="${path }/member/list">회원목록</a>
-<a href="${path }/login/login">
-<c:if test="${sessionScope.loginok==null }">로그인</c:if>
-<c:if test="${sessionScope.loginok!=null }">로그아웃</c:if>
-</a>
-<c:if test="${sessionScope.loginok!=null }">
-<b style="color: red;">${sessionScope.idok }</b>님이 로그인 중
-</c:if>
+<div style="position: absolute; left: 200px;,top: 150px;">
+${name }님이 로그인 중입니다.&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="로그아웃" onclick="location.href='${path}/login/logout'">
+</div>
+<br>
+<img alt="" src="${path }/image/3.png">
 </body>
 </html>

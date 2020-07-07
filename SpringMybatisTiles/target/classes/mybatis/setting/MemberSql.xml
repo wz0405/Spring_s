@@ -24,4 +24,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		resultType="mdto">
 		select * from member2 where num=#{num}
 	</select>
+	<!--아이디 비번 일치하면 로그인 -->
+	<select id="loginSuccess" parameterType="HashMap" resultType="int">
+		select count(*) from member2 where id=#{id} and pass=#{pass}
+	</select>
+	<!-- 이름 얻는 것 받아서 name얻는 것-->
+	<select id="nameByMember" parameterType="String" resultType="String">
+		select name from member2 where id=#{id}
+	</select>
 </mapper>

@@ -11,20 +11,12 @@
 <title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
+<script type="text/javascript">
+alert("비밀번호가 틀립니다.");
+history.back();
+</script>
 </head>
 <body>
-<a href="${path }/home">Home</a>
-<a href="${path }/info/insertform">입력폼</a>
-<a href="${path }/info/list">My목록</a>
-<a href="${path }/member/insertform">회원가입</a>
-<a href="${path }/member/list">회원목록</a>
-<a href="${path }/login/login">
-<c:if test="${sessionScope.loginok==null }">로그인</c:if>
-<c:if test="${sessionScope.loginok!=null }">로그아웃</c:if>
-</a>
-<c:if test="${sessionScope.loginok!=null }">
-<b style="color: red;">${sessionScope.idok }</b>님이 로그인 중
-</c:if>
+
 </body>
 </html>

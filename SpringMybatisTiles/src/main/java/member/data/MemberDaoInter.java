@@ -9,4 +9,9 @@ public interface MemberDaoInter {
 	public MemberDto getData(String num);
 	public void updateMember(MemberDto dto);
 	public void deleteMember(MemberDto dto);
+	
+	//아이디 비번 체크
+	public boolean isLogin(String id,String pass);
+	//네임얻기 
+	public String getName(String id);
 }

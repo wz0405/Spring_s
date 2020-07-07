@@ -1,5 +1,6 @@
 package member.data;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.mybatis.spring.support.SqlSessionDaoSupport;
@@ -35,6 +36,24 @@ public class MemberDao extends SqlSessionDaoSupport implements MemberDaoInter {
 	public void deleteMember(MemberDto dto) {
 		// TODO Auto-generated method stub
 		getSqlSession().update("deleteOfMember", dto);
+	}
+
+	@Override
+	public boolean isLogin(String id, String pass) {
+		// TODO Auto-generated method stub
+		HashMap<String,String>map=new HashMap<String, String>(); //해쉬 맵 사용
+		map.put("id",id);
+		map.put("pass",pass);
+		int n=getSqlSession().selectOne("loginSuccess", map);
+		return n==1?true:false; //3항연산자, 일치하는 아이디가 있으면 true 없으면 false
+	}
+
+	@Override
+	public String getName(String id) {
+		// TODO Auto-generated method stub
+		String name=getSqlSession().selectOne("nameByMember", id);
+		
+		return name;
 	}
 
 }
