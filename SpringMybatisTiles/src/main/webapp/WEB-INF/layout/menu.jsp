@@ -26,5 +26,6 @@
 <c:if test="${sessionScope.loginok!=null }">
 <b style="color: red;">${sessionScope.idok }</b>님이 로그인 중
 </c:if>
+<a href="${path }/board/list">방명록</a>
 </body>
 </html>
