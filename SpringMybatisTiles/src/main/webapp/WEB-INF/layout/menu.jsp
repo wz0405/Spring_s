@@ -27,5 +27,6 @@
 <b style="color: red;">${sessionScope.idok }</b>님이 로그인 중
 </c:if>
 <a href="${path }/board/list">방명록</a>
+<a href="${path }/guest/list">파일입출력방명록</a>&nbsp;&nbsp;&nbsp;&nbsp;
 </body>
 </html>

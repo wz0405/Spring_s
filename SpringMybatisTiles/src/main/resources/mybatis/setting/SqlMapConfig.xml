@@ -5,11 +5,15 @@
 		<typeAlias type="info.data.InfoDto" alias="idto" />
 		<typeAlias type="member.data.MemberDto" alias="mdto"/>
 		<typeAlias type="board.data.BoardDto" alias="bdto"/>
+		<typeAlias type="guest.data.GuestDto" alias="gdto"/>
+		
 	</typeAliases>
 	
 	<mappers>
 	<mapper resource="mybatis/setting/InfoSql.xml"/>
 	<mapper resource="mybatis/setting/MemberSql.xml"/>
 	<mapper resource="mybatis/setting/BoardSql.xml"/>
+	<mapper resource="mybatis/setting/GuestSql.xml"/>
+	
 	</mappers>
 </configuration>
