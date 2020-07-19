@@ -11,39 +11,40 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.multipart.MultipartFile;
 
 @Repository
-public class GuestDao extends SqlSessionDaoSupport implements GuestDaoInter{
+public class GuestDao extends SqlSessionDaoSupport implements GuestDaoInter {
 
-	@Override
-	public void insertGuest(GuestDto dto) {
-		getSqlSession().insert("insertOfGuest", dto);
-		
-	}
-	@Override
-	public List<GuestDto> getList(int start, int end) {
+    @Override
+    public void insertGuest(GuestDto dto) {
+        getSqlSession().insert("insertOfGuest", dto);
 
-		Map<String, Integer>map=new HashMap<String, Integer>();
-		map.put("start", start);
-		map.put("end", end);
-		return getSqlSession().selectList("selectPagingofGuest", map);
-	}
+    }
 
-	@Override
-	public int getTotalCount() {
-		// TODO Auto-generated method stub
-		return getSqlSession().selectOne("guestTotalCount");
-	}
-	@Override
-	public void deleteGuest(int num) {
-		getSqlSession().delete("deleteOfGuest", num);
-		
-	}
+    @Override
+    public List<GuestDto> getList(int start, int end) {
 
-	@Override
-	public GuestDto getData(int num) {
-		// TODO Auto-generated method stub
-		return getSqlSession().selectOne("guestSelectOneByNum", num);
-	}
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        map.put("start", start);
+        map.put("end", end);
+        return getSqlSession().selectList("selectPagingofGuest", map);
+    }
 
+    @Override
+    public int getTotalCount() {
+        // TODO Auto-generated method stub
+        return getSqlSession().selectOne("guestTotalCount");
+    }
+
+    @Override
+    public void deleteGuest(int num) {
+        getSqlSession().delete("deleteOfGuest", num);
+
+    }
+
+    @Override
+    public GuestDto getData(int num) {
+        // TODO Auto-generated method stub
+        return getSqlSession().selectOne("guestSelectOneByNum", num);
+    }
 
 
 }

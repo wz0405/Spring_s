@@ -6,24 +6,24 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class BoardDao extends SqlSessionDaoSupport implements BoardDaoInter{
+public class BoardDao extends SqlSessionDaoSupport implements BoardDaoInter {
 
-	@Override
-	public int getTotalCount() {
-		// TODO Auto-generated method stub
-		return getSqlSession().selectOne("selectCountOfBoard");
-	}
+    @Override
+    public int getTotalCount() {
+        // TODO Auto-generated method stub
+        return getSqlSession().selectOne("selectCountOfBoard");
+    }
 
-	@Override
-	public void insertBoard(BoardDto dto) {
-		// dao¿¡¼­ dto¸¦ ³Ñ±â´Â°Í
-		getSqlSession().insert("insertOfBoard", dto);
-	}
+    @Override
+    public void insertBoard(BoardDto dto) {
+        // daoï¿½ï¿½ï¿½ï¿½ dtoï¿½ï¿½ ï¿½Ñ±ï¿½Â°ï¿½
+        getSqlSession().insert("insertOfBoard", dto);
+    }
 
-	@Override
-	public List<BoardDto> getAllDatas() {
-		// TODO Auto-generated method stub
-		return getSqlSession().selectList("selectAllOfBoard");
-	}
+    @Override
+    public List<BoardDto> getAllDatas() {
+        // TODO Auto-generated method stub
+        return getSqlSession().selectList("selectAllOfBoard");
+    }
 
 }

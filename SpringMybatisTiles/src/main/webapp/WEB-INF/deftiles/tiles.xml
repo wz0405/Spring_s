@@ -1,37 +1,37 @@
-<!DOCTYPE tiles-definitions PUBLIC 
-"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
-"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-	<definition name="templayout1"
-		template="/WEB-INF/layout/layout1.jsp">
-		<put-attribute name="header"
-			value="/WEB-INF/layout/top.jsp" />
-		<put-attribute name="body"
-			value="/WEB-INF/layout/body.jsp" />
-		<put-attribute name="bottom"
-			value="/WEB-INF/layout/bottom.jsp" />
-		<put-attribute name="menu"
-			value="/WEB-INF/layout/menu.jsp" />
-	</definition>
+    <definition name="templayout1"
+                template="/WEB-INF/layout/layout1.jsp">
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/top.jsp"/>
+        <put-attribute name="body"
+                       value="/WEB-INF/layout/body.jsp"/>
+        <put-attribute name="bottom"
+                       value="/WEB-INF/layout/bottom.jsp"/>
+        <put-attribute name="menu"
+                       value="/WEB-INF/layout/menu.jsp"/>
+    </definition>
 
-	<!--하나하나 매핑주소 설정 -->
-	<definition name="home.tiles" extends="templayout1">
-		<put-attribute name="body"
-			value="/WEB-INF/layout/body.jsp" />
-	</definition>
+    <!--하나하나 매핑주소 설정 -->
+    <definition name="home.tiles" extends="templayout1">
+        <put-attribute name="body"
+                       value="/WEB-INF/layout/body.jsp"/>
+    </definition>
 
-	<definition name="list.tiles" extends="templayout1">
-		<put-attribute name="body"
-			value="/WEB-INF/info/list.jsp" />
-	</definition>
+    <definition name="list.tiles" extends="templayout1">
+        <put-attribute name="body"
+                       value="/WEB-INF/info/list.jsp"/>
+    </definition>
 
-	<definition name="input.tiles" extends="templayout1">
-		<put-attribute name="body"
-			value="/WEB-INF/info/inputForm.jsp" />
-	</definition>
-	<!-- 타일즈 경로가 너무 많이 생기므로 와일드 카드를 만들어 대처하자 위에것은 주석처리 안해도됨 -->
-	<definition name="/*/*" extends="templayout1">
-		<put-attribute name="body" value="/WEB-INF/{1}/{2}.jsp" />
+    <definition name="input.tiles" extends="templayout1">
+        <put-attribute name="body"
+                       value="/WEB-INF/info/inputForm.jsp"/>
+    </definition>
+    <!-- 타일즈 경로가 너무 많이 생기므로 와일드 카드를 만들어 대처하자 위에것은 주석처리 안해도됨 -->
+    <definition name="/*/*" extends="templayout1">
+        <put-attribute name="body" value="/WEB-INF/{1}/{2}.jsp"/>
 
-	</definition>
+    </definition>
 </tiles-definitions>

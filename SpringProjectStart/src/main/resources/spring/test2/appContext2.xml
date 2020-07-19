@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-	<!-- <bean name="stu" class="spring.day0625.ex2.Student"> <constructor-arg 
-		value="강호동"/> <constructor-arg value="010-1234-222"></constructor-arg> </bean> -->
-	<bean name="stu" class="spring.day0625.ex2.Student">
-		<constructor-arg>
-			<value>이수연</value>
-		</constructor-arg>
-		<constructor-arg>
-			<value>010-1234-2212</value>
-		</constructor-arg>
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <!-- <bean name="stu" class="spring.day0625.ex2.Student"> <constructor-arg
+        value="강호동"/> <constructor-arg value="010-1234-222"></constructor-arg> </bean> -->
+    <bean name="stu" class="spring.day0625.ex2.Student">
+        <constructor-arg>
+            <value>이수연</value>
+        </constructor-arg>
+        <constructor-arg>
+            <value>010-1234-2212</value>
+        </constructor-arg>
 
-	</bean>
+    </bean>
 
 
 </beans>

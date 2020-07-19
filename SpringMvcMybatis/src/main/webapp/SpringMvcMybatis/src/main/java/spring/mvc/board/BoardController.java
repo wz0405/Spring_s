@@ -15,25 +15,23 @@ import board.data.BoardDto;
 @Controller
 public class BoardController {
 
-	@Autowired
-	private BoardDaoInter dao;
-	
-	@GetMapping("/list")  //index½ÃÀÛ°æ·Î¿Í °°´Ù
-	public ModelAndView list()
-	{
-		ModelAndView model=new ModelAndView();
-		int totalCount=dao.getTotalCount();
-		List<BoardDto> list=dao.getAllDatas();
-		model.addObject("totalCount", totalCount);
-		model.addObject("list", list);
-		model.setViewName("board/list");
-		return model;
-	}
-	
-	@PostMapping("/write")
-	public String insert(@ModelAttribute BoardDto dto)
-	{
-		dao.insertBoard(dto);
-		return "redirect:list"; 
-	}
+    @Autowired
+    private BoardDaoInter dao;
+
+    @GetMapping("/list")  //indexï¿½ï¿½ï¿½Û°ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+    public ModelAndView list() {
+        ModelAndView model = new ModelAndView();
+        int totalCount = dao.getTotalCount();
+        List<BoardDto> list = dao.getAllDatas();
+        model.addObject("totalCount", totalCount);
+        model.addObject("list", list);
+        model.setViewName("board/list");
+        return model;
+    }
+
+    @PostMapping("/write")
+    public String insert(@ModelAttribute BoardDto dto) {
+        dao.insertBoard(dto);
+        return "redirect:list";
+    }
 }

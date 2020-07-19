@@ -7,13 +7,14 @@ import org.springframework.stereotype.Component;
 
 @Component("tc")
 public class TireController {
-	//@Autowired 캐나다와 한국이 켭침
-	@Resource(name ="canadaTire")
-	Tire tire;
-	public void process() {
-		String s=tire.getTire();
-		System.out.println(s);
-		
-	}
-	
+    //@Autowired 캐나다와 한국이 켭침
+    @Resource(name = "canadaTire")
+    Tire tire;
+
+    public void process() {
+        String s = tire.getTire();
+        System.out.println(s);
+
+    }
+
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<!-- <bean id="myDao" class="spring.day0625.anno.MyDao"></bean>
-	<bean id="logic" class="spring.day0625.anno.LogicController">
-		<constructor-arg ref="mydao"/>
-	</bean> -->
-	<!-- 어노테이션 등록 -->
-	<context:annotation-config/>
-	<!-- 스캔할 패키지 지정, 와일드 카드로 지정 -->
-	<context:component-scan base-package="spring.day0625.anno"/>
-	<context:component-scan base-package="spring.day0625.anno2"/>
+    <!-- <bean id="myDao" class="spring.day0625.anno.MyDao"></bean>
+    <bean id="logic" class="spring.day0625.anno.LogicController">
+        <constructor-arg ref="mydao"/>
+    </bean> -->
+    <!-- 어노테이션 등록 -->
+    <context:annotation-config/>
+    <!-- 스캔할 패키지 지정, 와일드 카드로 지정 -->
+    <context:component-scan base-package="spring.day0625.anno"/>
+    <context:component-scan base-package="spring.day0625.anno2"/>
 </beans>
