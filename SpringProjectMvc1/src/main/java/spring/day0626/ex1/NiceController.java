@@ -9,13 +9,13 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
 public class NiceController implements Controller { //컨트롤러 인터페이스 상속
-	@Override
-	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
-		ModelAndView model = new ModelAndView();
-		model.addObject("today", new Date());
-		model.addObject("weather", "아주맑음");
-		model.setViewName("result3");
-		return model;
-	}
+    @Override
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        ModelAndView model = new ModelAndView();
+        model.addObject("today", new Date());
+        model.addObject("weather", "아주맑음");
+        model.setViewName("result3");
+        return model;
+    }
 }

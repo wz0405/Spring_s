@@ -10,17 +10,16 @@ import board.data.BoardDaoInter;
 @Controller
 public class BoardController {
 
-	@Autowired
-	private BoardDaoInter dao;
-	
-	@GetMapping("/list")  //index시작경로와 같다
-	public ModelAndView list()
-	{
-		ModelAndView model=new ModelAndView();
-		int totalCount=dao.getTotalCount();
-		model.addObject("totalCount", totalCount);
-		model.setViewName("board/list");
-		return model;
-	}
+    @Autowired
+    private BoardDaoInter dao;
+
+    @GetMapping("/list")  //index시작경로와 같다
+    public ModelAndView list() {
+        ModelAndView model = new ModelAndView();
+        int totalCount = dao.getTotalCount();
+        model.addObject("totalCount", totalCount);
+        model.setViewName("board/list");
+        return model;
+    }
 }
 

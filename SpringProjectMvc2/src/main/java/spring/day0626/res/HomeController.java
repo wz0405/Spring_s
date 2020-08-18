@@ -17,27 +17,29 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class HomeController {
-	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Model model) {
-	
-		model.addAttribute("myimg1","image/yona.png");
-		model.addAttribute("myimg2","image/yeonhee.png");
-		model.addAttribute("title","좋아하는 연애인");
-		return "shop/list";
-	}
-	@GetMapping("/board/result1.do")
-	public String result() {
-		return "board/result1";
-	}
-	@GetMapping("/shop/list.do")
-	public String result2() {
-		return "shop/list";
-	}
-	
+
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+
+    /**
+     * Simply selects the home view to render by returning its name.
+     */
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String home(Model model) {
+
+        model.addAttribute("myimg1", "image/yona.png");
+        model.addAttribute("myimg2", "image/yeonhee.png");
+        model.addAttribute("title", "좋아하는 연애인");
+        return "shop/list";
+    }
+
+    @GetMapping("/board/result1.do")
+    public String result() {
+        return "board/result1";
+    }
+
+    @GetMapping("/shop/list.do")
+    public String result2() {
+        return "shop/list";
+    }
+
 }

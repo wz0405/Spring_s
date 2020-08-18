@@ -2,6 +2,6 @@ package board.data;
 
 public interface BoardDaoInter {
 
-	public int getTotalCount();
+    public int getTotalCount();
 }
 

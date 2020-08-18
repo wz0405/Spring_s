@@ -1,23 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+         pageEncoding="utf-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Insert title here</title>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>Insert title here</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
 </head>
 <body>
 <h1>매핑주소로 이동</h1>
 <ul>
-<li><a href="happy">happy로 이동</a></li>
-<li><a href="hello">hello로 이동</a></li>
-<li><a href="hello.do">hello.do로 이동</a></li>
-<li><a href="nice.do">nice.do로 이동</a></li>
+    <li><a href="happy">happy로 이동</a></li>
+    <li><a href="hello">hello로 이동</a></li>
+    <li><a href="hello.do">hello.do로 이동</a></li>
+    <li><a href="nice.do">nice.do로 이동</a></li>
 </ul>
 <h1>폼 전송-get방식</h1>
 <b><a href="myform">입력 폼</a></b>

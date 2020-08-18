@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans
+        xmlns="http://www.springframework.org/schema/mvc"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- DispatcherServlet Context: defines this servlet's request-processing
+        infrastructure -->
+
+    <!-- Enables the Spring MVC @Controller programming model -->
+    <annotation-driven/>
+
+
+    <resources mapping="/image/**" location="/WEB-INF/image/"/>
+    <resources mapping="/save/**" location="/WEB-INF/save/"/>
+    <resources mapping="/assets/**" location="/WEB-INF/assets/"/>
+    <resources mapping="/js/**" location="/WEB-INF/js/"/>
+    <resources mapping="/css/**" location="/WEB-INF/css/"/>
+    <resources mapping="/member/assets/**" location="/WEB-INF/assets/"/>
+    <resources mapping="/member/js/**" location="/WEB-INF/js/"/>
+    <resources mapping="/member/css/**" location="/WEB-INF/css/"/>
+ 	<resources mapping="/login/assets/**" location="/WEB-INF/assets/"/>
+    <resources mapping="/login/js/**" location="/WEB-INF/js/"/>
+    <resources mapping="/login/css/**" location="/WEB-INF/css/"/>
+    <resources mapping="/board/assets/**" location="/WEB-INF/assets/"/>
+    <resources mapping="/board/js/**" location="/WEB-INF/js/"/>
+    <resources mapping="/board/css/**" location="/WEB-INF/css/"/>
+    <resources mapping="/guest/assets/**" location="/WEB-INF/assets/"/>
+    <resources mapping="/guest/js/**" location="/WEB-INF/js/"/>
+    <resources mapping="/guest/css/**" location="/WEB-INF/css/"/>
+  
+
+
+    <!-- tiles Resolver -->
+    <beans:bean id="tilesConfigurer"
+                class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <beans:property name="definitions">
+            <beans:list>
+                <beans:value>/WEB-INF/deftiles/tiles.xml</beans:value>
+            </beans:list>
+        </beans:property>
+        <beans:property name="preparerFactoryClass"
+                        value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
+    </beans:bean>
+
+    <beans:bean id="viewResolver"
+                class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <beans:property name="viewClass"
+                        value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+    </beans:bean>
+
+
+    <context:component-scan base-package="spring.mvc.board,*.data"/>
+    <!-- file upload setting -->
+    <beans:bean id="multipartResolver"
+                class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <beans:property name="maxUploadSize" value="3000000"/>
+    </beans:bean>
+</beans:beans>
