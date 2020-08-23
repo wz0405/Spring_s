@@ -14,41 +14,41 @@
 <body>
 	<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Write_Board</h2>
 	<!-- Icon Divider-->
-			<div class="divider-custom">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
-			</div>
-			<form action="update" method="post">
+	<div class="divider-custom">
+		<div class="divider-custom-line"></div>
+		<div class="divider-custom-icon">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="divider-custom-line"></div>
+	</div>
+	<form action="update" method="post">
 
 
-				<table class="table table-striped" style="margin-left: auto; margin-right: auto; width: 400px;">
+		<table class="table table-striped" style="margin-left: auto; margin-right: auto; width: 400px;">
 
-					<tr>
-						<th>Writer</th>
-						<td><input type="text" name="writer" class="form-control" value="${dto.writer }"></td>
-					</tr>
+			<tr>
+				<th>Writer</th>
+				<td><input type="text" name="writer" class="form-control" value="${dto.writer }"></td>
+			</tr>
 
-					<tr>
-						<th>Subject</th>
-						<td><input type="text" name="subject" class="form-control" value="${dto.subject }"></td>
-					</tr>
-					<tr>
-						<td colspan="2"><textarea rows="10" cols="40" name="content" class="form-control">${dto.content }
+			<tr>
+				<th>Subject</th>
+				<td><input type="text" name="subject" class="form-control" value="${dto.subject }"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><textarea rows="10" cols="40" name="content" class="form-control">${dto.content }
 
          </textarea></td>
-					</tr>
+			</tr>
 
-					<tr>
-						<td colspan="2" align="center"><input type="hidden" name="num" value="${dto.num }"> <input
-								type="hidden" name="pageNum" value="${pageNum }"
-							>
-							<button class="btn btn-default " type="submit">edit</button></td>
-					</tr>
-				</table>
-			</form>
-	
+			<tr>
+				<td colspan="2" align="center"><input type="hidden" name="num" value="${dto.num }"> <input
+						type="hidden" name="pageNum" value="${pageNum }"
+					>
+					<button class="btn btn-default " type="submit">edit</button></td>
+			</tr>
+		</table>
+	</form>
+
 </body>
 </html>

@@ -13,18 +13,18 @@
 
 </head>
 <body>
-<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">LogIn_Member</h2>
+	<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">LogIn_Member</h2>
 	<!-- Icon Divider-->
-			<div class="divider-custom">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
-			</div>
+	<div class="divider-custom">
+		<div class="divider-custom-line"></div>
+		<div class="divider-custom-icon">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="divider-custom-line"></div>
+	</div>
 	<section class="page-section" id="contact">
 		<div class="container">
-			<h2 class="page-section-heading text-uppercase text-secondary mb-0">${name }님이 로그인 중입니다.</h2>
+			<h2 class="page-section-heading text-uppercase text-secondary mb-0">${name }님이로그인 중입니다.</h2>
 			<br>
 			<input type="button" class="btn btn-danger btn-sm" value="로그아웃" onclick="location.href='${path}/login/logout'">
 		</div>

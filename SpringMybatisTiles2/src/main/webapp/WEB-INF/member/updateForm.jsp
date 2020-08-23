@@ -45,7 +45,9 @@
 				<div class="control-group">
 					<div class="form-group floating-label-form-group controls mb-0 pb-2">
 						<label>Member Password</label>
-						<input class="form-control" name="pass" type="text" placeholder="Password" value="${dto.pass }" required="required" />
+						<input class="form-control" name="pass" type="text" placeholder="Password" value="${dto.pass }"
+							required="required"
+						/>
 						<p class="help-block text-danger"></p>
 					</div>
 				</div>

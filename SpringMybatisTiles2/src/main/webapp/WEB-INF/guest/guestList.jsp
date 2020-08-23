@@ -38,18 +38,17 @@
 			<b style="text-align: center;">파일 업로드는 로그인 후 사용가능합니다.</b>
 			<div>
 				<hr width="500" size="3" color="gray">
-				<c:forEach var="dto" items="${list }" >
+				<c:forEach var="dto" items="${list }">
 					<b>no.${no }</b>
 					<br>
 					<span style="margin-left: 650px;">추천 <span style="color: red; font-weight: bold;" class="chu">${dto.chu }</span>
 					</span>
 					<br>
 
-					<c:set var="no" value="${no-1 }"  />
-					<table style="text-align: center; margin-left: auto; margin-right: auto; width: 400px" >
+					<c:set var="no" value="${no-1 }" />
+					<table style="text-align: center; margin-left: auto; margin-right: auto; width: 400px">
 						<tr>
-							<td>작성자: ${dto.writer } 
-								<fmt:formatDate value="${dto.writeday }" pattern="yyyy-MM-dd HH:mm" /> <pre>${dto.content }</pre>
+							<td>작성자: ${dto.writer } <fmt:formatDate value="${dto.writeday }" pattern="yyyy-MM-dd HH:mm" /> <pre>${dto.content }</pre>
 								<br> <c:if test="${dto.imagename!='noimage' }">
 									<c:forTokens var="myimg" items="${dto.imagename }" delims=",">
 										<a href="${path }/save/${myimg}" target="_new"> <img alt="" src="${path }/save/${myimg}"
