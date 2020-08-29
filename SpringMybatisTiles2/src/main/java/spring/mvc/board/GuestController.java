@@ -33,7 +33,7 @@ public class GuestController {
         }
 
         // 이미지 업로드 경로
-        String path = request.getSession().getServletContext().getRealPath("/WEB-INF/save");
+        String path = request.getSession().getServletContext().getRealPath("/save");
         System.out.println(path);
 
         // path경로에 이미지저장

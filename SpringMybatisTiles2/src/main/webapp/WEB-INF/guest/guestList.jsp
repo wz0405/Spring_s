@@ -24,7 +24,7 @@
 	<section class="page-section" style="text-align: center;">
 		<div class="container">
 
-
+			<!-- 세션스코프를 활용하면 세션에 저장된 변수를 참조할 수 있다. 널값을 체크 후 버튼 생성 -->
 			<c:if test="${sessionScope.loginok!=null }">
 				<button type="button" class="btn btn-success btn-sm" style="width: 200px;" onclick="location.href='form'">Image_Board_Upload</button>
 			</c:if>
