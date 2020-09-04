@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.wezion.test">
+	<logger name="com.wiezon.test">
 		<level value="info" />
 	</logger>
 	
