@@ -23,6 +23,6 @@ public class TestController {
 		model.addAttribute("test",test);
 
 		
-		return "test";
+		return "html/control-01";
 	}
 }
